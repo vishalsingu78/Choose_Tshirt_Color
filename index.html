@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            width:  100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            position: absolute;
+            top: 10%;
+        }
+        #shirt{
+            width: 300px;
+            height: 300px;
+            clip-path: polygon(45% 4%, 38% 4%, 29% 7%, 26% 8%, 16% 11%, 8% 26%, 7% 32%, 6% 35%, 4% 42%, 4% 45%, 3% 49%, 5% 51%, 12% 52%, 15% 53%, 18% 54%, 21% 56%, 20% 60%, 20% 63%, 20% 66%, 20% 68%, 19% 72%, 20% 75%, 20% 78%, 20% 81%, 20% 85%, 20% 87%, 20% 88%, 21% 95%, 25% 96%, 27% 96%, 32% 96%, 37% 97%, 52% 98%, 59% 97%, 66% 95%, 70% 93%, 74% 92%, 78% 91%, 78% 85%, 78% 85%, 77% 82%, 78% 78%, 78% 78%, 79% 73%, 78% 71%, 79% 67%, 79% 55%, 79% 56%, 76% 57%, 88% 54%, 88% 54%, 92% 53%, 96% 52%, 98% 50%, 95% 43%, 92% 33%, 91% 28%, 92% 34%, 90% 23%, 88% 16%, 89% 20%, 84% 12%, 75% 8%, 70% 7%, 64% 5%, 64% 4%, 62% 4%, 64% 4%, 59% 5%, 56% 5%, 49% 5%, 46% 5%, 46% 5% );
+            background-color: brown;
+        }
+        
+        button,#green1,#red1,#yellow1,#blue1{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        #green1{
+            background-color: green;
+        }
+        #red1{
+            background-color: red;
+        }
+        #yellow1{
+            background-color: yellow;
+        }
+        #blue1{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose your Color:</h1>
+    <div id="shirt">
+        <img id="tshirt" src="./tshirt1.png">
+    </div>
+        <button id="red1" onclick="r()"></button>
+        <button id="green1"  onclick="g()"></button>
+        <button id="yellow1" onclick="y()"></button>
+        <button id="blue1"   onclick="b()"></button>
+
+        <script>
+            function r(){
+                document.getElementById("tshirt").style.backgroundColor="red"
+            }
+            function g(){
+                document.getElementById("tshirt").style.backgroundColor="green"
+            }
+            function y(){
+                document.getElementById("tshirt").style.backgroundColor="yellow"
+            }
+            function b(){
+                document.getElementById("tshirt").style.backgroundColor="blue"
+            }
+        </script>
+</body>
+</html>
